@@ -6,4 +6,4 @@ read entered_name
 
 echo -e "\nWelcome to bash tutorial" $entered_name
 
-echo "\nWelcome $1"
+echo -e "\nWelcome" $1 
