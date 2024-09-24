@@ -2,7 +2,7 @@
 
 NUMBER=100
 
-if [$NUMBER -gt 50]
+if [ $NUMBER -gt 50 ];
 
 then
 
