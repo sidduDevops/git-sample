@@ -22,7 +22,7 @@ if [ $1 -ne 0 ]
 
     else
 
-    echo -e " $G $2 is success $N"
+    echo -e "  $2 is $G success $N"
 fi
 }
 
