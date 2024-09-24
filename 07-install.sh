@@ -8,12 +8,12 @@ if [ $1 -ne 0 ]
     
     then
 
-    echo "Error::Installing $2 is FAILED"
+    echo "Error:: $2 is FAILED"
     exit 1
 
     else
 
-    echo "Installing $2 is success"
+    echo " $2 is success"
 fi
 }
 
