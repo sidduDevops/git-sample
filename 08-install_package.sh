@@ -47,7 +47,7 @@ for package in $@
             yum install $package -y &>> $LOGFILE
             VALIDATE $? "Installing $package"
         else
-            echo "Already installed"
+            echo -e "Already installed $G Skipping"
 
         fi
     
