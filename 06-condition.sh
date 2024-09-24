@@ -12,4 +12,4 @@ else
 
     echo "Not greater"
 
-if
+fi
