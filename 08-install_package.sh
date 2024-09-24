@@ -38,7 +38,7 @@ else
 
 fi
 
-for package in $a
+for package in $@
  
  do 
      yum list installed $package
