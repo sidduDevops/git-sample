@@ -33,11 +33,11 @@ else
 
 fi
 
-yum install mysql -y
+yum install mysql -y &>> $LOGFILE
 
-VALIDATE $? "Installing MYSQL" &>> $LOGFILE
+VALIDATE $? "Installing MYSQL" 
 
-yum install git -y
+yum install git -y &>> $LOGFILE
 
-VALIDATE $? "Installing GIT" &>> $LOGFILE
+VALIDATE $? "Installing GIT" 
 
