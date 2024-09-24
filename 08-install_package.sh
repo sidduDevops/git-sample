@@ -42,9 +42,9 @@ for package in $@
  
  do 
      yum list installed $package
-        if [ $? -ne 0]
+        if [ $? -ne 0 ]
         then
-            yum install $package -y &>> LOG_FILE
+            yum install $package -y &>> $LOG_FILE
             VALIDATE $? "Installing $package"
         else
             echo "Already installed"
