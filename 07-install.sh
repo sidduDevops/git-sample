@@ -2,6 +2,11 @@
 
 ID=$(id -u)
 
+R="\e[31m"
+G="\e[32m"
+Y="\e[33m"
+N="\e[0m"
+
 TIMESTAMP=$(date +%F-%H-%M-%S)
 
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
@@ -12,12 +17,12 @@ if [ $1 -ne 0 ]
     
     then
 
-    echo "Error:: $2 is FAILED"
+    echo -e "$R Error::$N $2 is $R FAILED"
     exit 1
 
     else
 
-    echo " $2 is success"
+    echo " $G $2 is success $N"
 fi
 }
 
