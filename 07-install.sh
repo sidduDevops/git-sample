@@ -2,6 +2,10 @@
 
 ID=$(id -u)
 
+TIMESTAMP=$(date +%F-%H-%M-%S)
+
+LOGFILE="/tmp/$0-$TIMESTAMP.log"
+
 VALIDATE(){
 
 if [ $1 -ne 0 ]
@@ -31,9 +35,9 @@ fi
 
 yum install mysql -y
 
-VALIDATE $? "Installing MYSQL"
+VALIDATE $? "Installing MYSQL" &>> $LOGFILE
 
 yum install git -y
 
-VALIDATE $? "Installing GIT"
+VALIDATE $? "Installing GIT" &>> $LOGFILE
 
